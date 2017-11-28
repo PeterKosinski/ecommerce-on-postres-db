@@ -25,7 +25,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'po!_ro+kpuk3n+(glxg3baoxe6_)_tl4y!@120f3isi%-y-gn$'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = os.environ.get("DEBUG", False)
 
 ALLOWED_HOSTS = ["ecommerce-peterkosinski.c9users.io", "deployecomm.herokuapp.com"]
 
